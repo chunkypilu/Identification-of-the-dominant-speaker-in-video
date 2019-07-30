@@ -1,6 +1,8 @@
 # Dominant Speaker identification in videos
 
-### Problem: Given a video ,need to find which one of these six speaker is present there ?
+### Problem: Given a video, need to find which one of these six speaker is present there ?
+
+Classes:
 
 1. Atul Khatri
 2. Flute Raman
