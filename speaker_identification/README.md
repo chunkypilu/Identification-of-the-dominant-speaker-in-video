@@ -12,11 +12,11 @@
 
 ## Dataset Preparation:
 
--Downloaded 20-25 videos (720p) of each speaker from youtube (used different videos for frame extraction rather than extracting more frames from same video) 
+-Downloaded 20-25 videos (720p) of each speaker from youtube (used different videos for frame extraction rather than     extracting more frames from same video) 
 
 -Extract frames using VideoCapture() and read() opencv functions with suitable FPS and put into respective folders. 
 
--First we tried Haar CascadeClassifier in opencv for face detection in frames. (Advantage: It's fast., Disadvantae: Its facing problem for face of person with beared like sadhguru), In our case need more info than only the face.
+-First we tried Haar CascadeClassifier in opencv for face detection in frames. (Advantage: It's fast., Disadvantae: Its  facing problem for face of person with beared like sadhguru), In our case need more info than only the face.
 
 -So we used YOLO to get the frames which contains class person, In case of multiple person detected in a frame we extract the person having probability > .98 assuming that the dominant person (speaker) will have a good coverage in the frame. In case of frames with only one person we need to decide that it is person of our interest (speaker with one of the 6 classes or any other person (from audience)), For deciding this we take 2-Norm of image pixels and takes difference with mean of the 2-Norm of all images, if its less than 10000, we retain this frame because it contains person of our interest. 
 
@@ -24,9 +24,22 @@
 
 -We tried tranfer learning with VGG16, Resnet50 and Inceptionv3 networks with only classifiers trained and with last two layers (fc1 and fc2) also trained.
 
-
-| Model | description | Trainig data | Training examples | epoch | Val. acc | Test acc_1 | Test acc_1 (cropped testdata) | Test acc_2 | Test acc_2 (cropped testdata) |
-
+| Model | description | Trainig data | Training examples | epoch | Val. acc | Test acc_1 | Test acc_1 (cropped testdata) |Test acc_2 | Test acc_2 (cropped testdata) |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| a | a | a | a | a | a | a | a | a | a |
+| vgg16_0_30_0.h5 (file: vgg16_0_30_0.py ) | Only classifier trained | Frames | 8297 | 30 | 99.52% | 62.05% | 60.6% | 62.05% | 61.21% |
+| Vgg16 (vgg16_1_30_0.h5) |  Last two layers trained  |  Frames  |  8297  | 30 | 99.54%  | 57.47%  | 44.8% | 59.44%  | 45.36% | 
+
+| Resnet50(resnet50_0_30_0.h5) |  Only classifier trained |  Frames  |  8297  | 30 | 99.14% | 59.69% | 67.36% | 61.16% | 67.08% |
+
+| Resnet50 (resnet50_1_30_0.h5) |  Last two layers trained |  Frames  |  8297  | 20 | 99.25% | 57.94% | 63.79% | 59.94% | 64.83% |
+
+
+
+
+
+ 
+
+
+
+
 
