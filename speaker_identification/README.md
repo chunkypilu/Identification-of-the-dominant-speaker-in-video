@@ -1,4 +1,4 @@
-# Spearker identification in vedios
+# Speaker identification in vedios
 
 ### Problem: Given a vedio ,need to find which one of these six speaker is present there ?
 
