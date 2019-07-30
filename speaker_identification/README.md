@@ -33,5 +33,5 @@
 | Model | description | Trainig data | #Training | examples | epoch | Val. acc | Test acc_1 | Test acc_1 (cropped testdata) | Test acc_2 | Test acc_2 (cropped testdata) |
 
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-||||||||||||
+|a|a|a|a|a|a|a|a|a|a|a|
 
