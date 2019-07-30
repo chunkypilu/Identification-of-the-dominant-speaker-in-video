@@ -24,14 +24,9 @@
 
 -We tried tranfer learning with VGG16, Resnet50 and Inceptionv3 networks with only classifiers trained and with last two layers (fc1 and fc2) also trained.
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
 
+| Model | description | Trainig data | Training examples | epoch | Val. acc | Test acc_1 | Test acc_1 (cropped testdata) | Test acc_2 | Test acc_2 (cropped testdata) |
 
-| Model | description | Trainig data | #Training | examples | epoch | Val. acc | Test acc_1 | Test acc_1 (cropped testdata) | Test acc_2 | Test acc_2 (cropped testdata) |
-
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|a|a|a|a|a|a|a|a|a|a|a|
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| a | a | a | a | a | a | a | a | a | a |
 
