@@ -28,10 +28,17 @@
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | vgg16_0_30_0.h5 (file: vgg16_0_30_0.py ) | Only classifier trained | Frames | 8297 | 30 | 99.52% | 62.05% | 60.6% | 62.05% | 61.21% |
 | Vgg16 (vgg16_1_30_0.h5) |  Last two layers trained  |  Frames  |  8297  | 30 | 99.54%  | 57.47%  | 44.8% | 59.44%  | 45.36% | 
-
 | Resnet50(resnet50_0_30_0.h5) |  Only classifier trained |  Frames  |  8297  | 30 | 99.14% | 59.69% | 67.36% | 61.16% | 67.08% |
+| Resnet50 (resnet50_1_30_0.h5) |  Last two layers trained |  Frames  |  8297  | 20 | 99.25% | 57.94% | 63.79% | 59.94% |     64.83% |
+| Inceptionnetv3(Inceptionnetv3_1_30_0.h5) | Last two layers trained | Frames | 8297 | 30 | 99.80% | 56.88% | 60.03% | 62.36% | 60.50% |
+| Inceptionnetv3(Inceptionnetv3_1_50_0.h5) | Last two layers trained | Frames | 8297 | 50 | 99.45% | 61.40% | 65.03% | 62.58% | 65.42% |
+| Vgg16(vgg16_0_30_1.h5) | Only classifier trained | Cropped frames | 7623 | 30 | 99.13% | 69.49% | 65.00% | 71.74% | 64.24% |
+| Vgg16(vgg16_1_30_1.h5) | Last two layers trained | Cropped frames | 7623 | 30 | 99.87% | 58.79% | 62.16% | 60.96% | 63.31% |
+| Resnet50(resnet50_0_30_1.h5) | Only classifier trained | Cropped frames | 7623 | 30 | 99.73% | 71.60% | 75.17% | 73.99% |   75.98% |
+| Resnet50(resnet50_1_30_1.h5) | Last two layers trained | Cropped frames | 7623 | 30 | 99.54% | 67.92% | 71.45% | 70.87% | 72.81% |
+| Resnet50(resnet50_0_50_1.h5) | Only classifier trained | Cropped frames | 7623 | 30 | 99.35% | 67.61% | 72.33% | 70.65% | 74.21% |
+| inceptionnetv3(inceptionnetv3_1_30_1.h5) | Last two layers trained | Cropped frames | 7623 | 30 | 99.61% | 61.07% | 69.13% | 61.40% | 69.55% |
 
-| Resnet50 (resnet50_1_30_0.h5) |  Last two layers trained |  Frames  |  8297  | 20 | 99.25% | 57.94% | 63.79% | 59.94% | 64.83% |
 
 
 
